@@ -14,7 +14,7 @@ var connection = mysql.createConnection({
   user: "root",
 
   // Your password
-  password: "",
+  password: "?",
   database: "bamazon"
 });
 
@@ -23,6 +23,7 @@ connection.connect(function (err) {
   if (err) {
     console.error("connected as id: " + connection.threadId);
   }
+  // call back function products
   products();
 });
 
@@ -40,13 +41,12 @@ function products() {
     });
     res.forEach(function (data) {
       if (table.length < 15)
-        // push colors to database
+        // add colors to database when print-out
         table.push([colors.yellow(data.item_id), colors.green(data.product_name), colors.magenta(data.department_name), colors.cyan(data.price), colors.blue(data.stock_quantity)]);
 
     });
     console.log(table.toString());
-
-
+    // call back function purchargeProducts
     purchargeProducts();
 
   })
@@ -56,9 +56,8 @@ function products() {
 //function to ask users which products they would like to buy
 function purchargeProducts() {
 
-  //calling the function from within displayProducts() to force a synchronous display
 
-  //i.e. show the products table from the database and then go through inquirer prompts
+  //show the products table from the database and then go through inquirer prompts
 
   inquirer.prompt([
 
@@ -133,8 +132,6 @@ function purchargeProducts() {
 
         if (err) throw err;
 
-        //console.log(res); //test
-
         //if the user enters a productChoice that doesn't match an item_id in the database
 
         if (res.length === 0) {
@@ -143,19 +140,19 @@ function purchargeProducts() {
 
           console.log("");
 
-
+          // call back again function purchargeProducts
           purchargeProducts();
 
         }
 
         for (var i = 0; i < res.length; i++) {
 
-          //if the user asked for a larger quantity than what's available in stock
+          //if the user asked for a larger quantity than what's available in stocks
 
           if (answers.productQuantity > res[i].stock_quantity) {
 
             // print out valid input
-            console.log("\n" + res[i].product_name + " Insufficient quantity Stocks, please Enter another Item or another small number !!");
+            console.log("\n" + res[i].product_name + " Insufficient quantity !!  Please Enter another Item or another small number !!");
 
             console.log(colors.green("Current stocks quantity are: " + res[i].stock_quantity + " Items "));
 
@@ -193,7 +190,7 @@ function purchargeProducts() {
               if (err) throw err;
 
             });
-            //connection with Database item_id
+            //connection with Database 
             connection.query("SELECT * FROM products WHERE item_id=?", answers.productChoice, function (err, res) {
 
               if (err) throw err;
