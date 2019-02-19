@@ -1,0 +1,22 @@
+{
+  "name": "bamazonmysql",
+  "version": "1.0.0",
+  "main": "bamazon.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cli-table": "^0.3.1",
+    "cli-table2": "^0.2.0",
+    "colors": "^1.3.3",
+    "console.table": "^0.10.0",
+    "dotenv": "^6.2.0",
+    "inquirer": "^6.2.2",
+    "keys.js": "^1.0.2",
+    "mysql": "^2.16.0"
+  },
+  "devDependencies": {},
+  "description": ""
+}
