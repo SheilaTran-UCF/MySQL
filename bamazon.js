@@ -1,5 +1,5 @@
-var mysql = require("mysql");
-var inquirer = require("inquirer");
+const mysql = require("mysql");
+const inquirer = require("inquirer");
 const Table = require("cli-table2");
 const colors = require("colors")
 
