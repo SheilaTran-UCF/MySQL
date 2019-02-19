@@ -53,18 +53,17 @@ In this activity, we'll be creating an Amazon-like storefront with the MySQL ski
 
 ## Preview
 
-<img src="Capture-pics/Capture1.PNG" width="100%">
-<img src="Capture-pics/Capture2.PNG" width="100%">
-<img src="Capture-pics/Capture3.PNG" width="100%">
-<img src="Capture-pics/Capture4.PNG" width="100%">
-<img src="Capture-pics/Capture5.PNG" width="100%">
-<img src="Capture-pics/Capture6.PNG" width="100%">
-<img src="Capture-pics/Capture7.PNG" width="100%">
-<img src="Capture-pics/Capture8.PNG" width="100%">
-<img src="Capture-pics/Capture9.PNG" width="100%">
-<img src="Capture-pics/Capture10.PNG" width="100%">
-<img src="Capture-pics/Capture11.PNG" width="100%">
-<img src="Capture-pics/Capture12.PNG" width="100%">
+<img src="capture-pics/Capture1.PNG" width="100%">
+<img src="capture-pics/Capture2.PNG" width="100%">
+<img src="capture-pics/Capture3.PNG" width="100%">
+<img src="capture-pics/Capture4.PNG" width="100%">
+<img src="capture-pics/Capture5.PNG" width="100%">
+<img src="capture-pics/Capture6.PNG" width="100%">
+<img src="capture-pics/Capture7.PNG" width="100%">
+<img src="capture-pics/Capture8.PNG" width="100%">
+<img src="capture-pics/Capture9.PNG" width="100%">
+<img src="capture-pics/Capture10.PNG" width="100%">
+<img src="capture-pics/Capture11.PNG" width="100%">
 
 
 
